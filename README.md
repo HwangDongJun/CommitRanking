@@ -19,3 +19,7 @@
 
 5. Output Type
 	- Rank [count] -> UserName: [UserName] | Count: [CommitCount] | RepositoryName: [RepositoryName] | UpdatedAt: [LastUpdatedTime]
+
+6. ScreenShot
+----------
+![result_img](img_file/result_img.png)
