@@ -16,3 +16,6 @@
 4. How to use (commit_info_crawler)
 	- Fill in the user_list/Uname_list file with the name of the person you want to search for, one per line.
 	- python3 main.py user_list/Uname_list.txt  <-- Run command
+
+5. Output Type
+	- Rank [count] -> UserName: [UserName] | Count: [CommitCount] | RepositoryName: [RepositoryName] | UpdatedAt: [LastUpdatedTime]
