@@ -29,6 +29,8 @@ class repo_commit_info(object):
 			self.repoNames.append(data['name'])
 		return self.repoNames
 	
+	''' 
+	#Crawler using Rest API
 	def get_commit_info(self, repo_name):
 		headers = self.headers
 		request_dict = {'id': self.name, 'repo': repo_name}
@@ -36,3 +38,4 @@ class repo_commit_info(object):
 		response_json = self.load_data(response)
 		for data in response_json:
 			pprint(data)
+	'''
