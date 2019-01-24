@@ -12,3 +12,7 @@
 3. Reference site
 	- https://developer.github.com/v3/     [Rest API]
 	- https://developer.github.com/v4/     [GraphQL API]
+
+4. How to use (commit_info_crawler)
+	- Fill in the user_list/Uname_list file with the name of the person you want to search for, one per line.
+	- python3 main.py user_list/Uname_list.txt
