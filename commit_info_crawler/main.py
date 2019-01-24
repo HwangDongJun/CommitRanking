@@ -27,7 +27,7 @@ def search_commit(argv):
 			for repo in repo_names:
 				commit_crawler = graphql_api_crawler(repo, header, user_name)
 				commit_data = commit_crawler.run_query()
-				pprint(commit_data)
+				#pprint(commit_data) # <- If you are concerned about output information, please remove the comment.
 				
 		#Choose the case with the highest number of commit attempts.
 				if commit_data['data']['repository']['defaultBranchRef'] == None:
