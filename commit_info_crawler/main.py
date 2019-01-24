@@ -48,7 +48,6 @@ def search_commit(argv):
 					etc_info[user_name] = etc_list
 		
 		ranking_user = sorted(ranking_user.items(), key=operator.itemgetter(1), reverse=True)
-		print(ranking_user)
 		count = 1
 		for rank in ranking_user:
 			print("Rank {} -> UserName: {} | Count: {} | RepositoryName: {} | UpdatedAt : {}".format(str(count), rank[0], rank[1], etc_info[rank[0]][0], etc_info[rank[0]][1]))
