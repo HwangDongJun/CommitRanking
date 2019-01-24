@@ -22,4 +22,6 @@
 
 6. ScreenShot
 ----------
-![result_img](img_file/result_img.png)
+![result_img](./img_file/result_img.PNG)
+
+#### Thank you for providing information.
