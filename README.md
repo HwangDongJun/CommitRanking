@@ -23,5 +23,7 @@
 6. Result Data
 ![result_img](./img_file/result_img.PNG)
 
+7. Draw Chart
+![draw_chart_img](./img_file/draw_chart_img.PNG)
 
 #### The data for output is a random user in Github.
