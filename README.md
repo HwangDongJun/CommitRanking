@@ -23,7 +23,22 @@
 6. Result Data
 ![result_img](./img_file/result_img.PNG)
 
-7. Draw Chart
+7. Draw Bar Chart
 ![draw_chart_img](./img_file/draw_chart_img.PNG)
+
+---
+## Github User EventData
+#### It crawls the user's events independently of the RankingCommit.
+
+1. How to use (event_check)
+	- python3 event_main.py userID:userPWD <-- Run command
+	- input name: [Here!] -> Enter the name of the user you want to crawl!!!
+
+2. Result Data
+![result_event_img](./img_file/event_result_img.PNG)
+
+3. Draw Radar Chart
+	- The position of the value displayed in the radar chart is random
+![draw_radar_chart](./img_file/draw_radar_chart.PNG)
 
 #### The data for output is a random user in Github.
