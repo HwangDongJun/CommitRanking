@@ -7,13 +7,15 @@ from get_certification import git_certification
 from repo_commit import repo_commit_info
 from GraphQL_crawler import graphql_api_crawler
 
+FILE_PATH = 'user_list/Uname_list.txt'
+
 def search_commit(argv):
 	if len(argv) < 2:
-		print("Type as shown : python3 main.py user_list/Uname_list.txt")
+		print("Type as shown : python3 main.py userID:userPWD")
 		sys.exit(0)
-	with open(argv[1], 'r') as fr:
+	with open(FILE_PATH, 'r') as fr:
 		lines = fr.readlines()
-		user_cert = input("Type in the following format(userID:userPWD): ")
+		user_cert = argv[1]  # user_cert = userID:userPWD
 		ranking_user = dict()
 		etc_info = dict()
 		for line in lines:
