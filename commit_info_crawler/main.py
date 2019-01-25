@@ -1,5 +1,6 @@
 import sys
 import operator
+import csv
 from pprint import pprint
 
 from get_certification import git_certification
@@ -47,11 +48,19 @@ def search_commit(argv):
 					etc_list.append(commit_data['data']['repository']['updatedAt'])
 					etc_info[user_name] = etc_list
 		
+		#save csv file
+		fw_data = open('Ranking_data.csv', 'w', encoding='utf-8', newline='')
+		wr_data = csv.writer(fw_data)
+		#sorted ranking user commit count
 		ranking_user = sorted(ranking_user.items(), key=operator.itemgetter(1), reverse=True)
 		count = 1
+		#save csv file & print ranking user commit count
+		wr_data.writerow('UserName', 'CommitCount')
 		for rank in ranking_user:
 			print("Rank {} -> UserName: {} | Count: {} | RepositoryName: {} | UpdatedAt : {}".format(str(count), rank[0], rank[1], etc_info[rank[0]][0], etc_info[rank[0]][1]))
 			count += 1
-
+			wr_data.writerow([rank[0], rank[1]])
+		fw_data.close()
+		
 if __name__ == '__main__':
 	sys.exit(search_commit(sys.argv))
