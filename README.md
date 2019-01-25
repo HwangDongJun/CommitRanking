@@ -35,6 +35,7 @@
 	- input name: [Here!] -> Enter the name of the user you want to crawl!!!
 
 2. Result Data
+
 ![result_event_img](./img_file/event_result_img.PNG)
 
 3. Draw Radar Chart
