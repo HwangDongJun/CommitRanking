@@ -23,8 +23,15 @@
 6. Result Data
 ![result_img](./img_file/result_img.PNG)
 
-7. Draw Bar Chart
+7. Draw Bar/Pie Chart
+- Change Input Format <br>
+![input_format](./img_file/input_chart.PNG)
+
+- Bar Chart <br>
 ![draw_chart_img](./img_file/draw_chart_img.PNG)
+
+- Pie Chart <br>
+![draw_pie_chart](./img_file/draw_pie_chart.PNG)
 
 ---
 ## Github User EventData
