@@ -13,9 +13,12 @@ from visualization import draw_chart
 FILE_PATH = 'user_list/Uname_list.txt'
 CSV_PATH = 'Ranking_data.csv'
 
-def draw_data(path):
+def draw_data(kind, path):
 	draw = draw_chart(path)
-	draw.bar_chart()
+	if kind.lower() == 'bar':
+		draw.bar_chart()
+	else:
+		draw.pie_chart()
 
 def search_commit(argv):
 	if len(argv) < 2:
@@ -81,8 +84,9 @@ def search_commit(argv):
 				wr_data.writerow([rank[0], rank[1]])
 			fw_data.close()
 	
-	#draw_chart (bar)
-	draw_data(CSV_PATH)
+	#draw_chart (bar, pie)
+	chart = input('Write the chart you want(bar or pie): ')
+	draw_data(chart, CSV_PATH)
 
 if __name__ == '__main__':
 	sys.exit(search_commit(sys.argv))

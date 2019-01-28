@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+from matplotlib import style
 
 
 class draw_chart(object):
@@ -20,4 +21,24 @@ class draw_chart(object):
 		rects = plt.barh(ypos, CommitCount, align='center', height=0.5)
 		plt.yticks(ypos, UserName)
 		plt.xlabel(data.columns[0])
+		plt.show()
+
+	def pie_chart(self):
+		style.use('ggplot')
+
+		data = pd.read_csv(self.file_path)
+		#Set data to list()
+		UserName = data.UserName.tolist()
+		CommitCount = data.CommitCount.tolist()
+
+		index = CommitCount.index(max(CommitCount))
+		explode = list()
+		for i in range(len(CommitCount)):
+			if i == index:
+				explode.append(0.1)
+			else:
+				explode.append(0.0)
+		explode = tuple(explode)
+
+		plt.pie(CommitCount, labels=UserName, shadow=True, startangle=90, autopct='%1.1f%%', explode=explode, pctdistance=0.7)
 		plt.show()
