@@ -1,6 +1,6 @@
 # CommitRanking
 
-### It ranks the number of commit in the github repository of the designated personnel.
+### Rank the number of commits in the github repository of the specified user.
 
 1. Using Interface
 	- Rest API
@@ -28,7 +28,8 @@
 
 ---
 ## Github User EventData
-#### It crawls the user's events independently of the RankingCommit.
+
+#### Navigate to your events independently of the RankingCommit.
 
 1. How to use (event_check)
 	- python3 event_main.py userID:userPWD <-- Run command
