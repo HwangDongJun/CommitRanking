@@ -25,13 +25,13 @@
 
 7. Draw Bar/Pie Chart
 - Change Input Format <br>
-![input_chart](./img_file/input_chart.PNG)
+![input_format](./img_file/input_format.PNG)
 
 - Bar Chart <br>
 ![draw_chart_img](./img_file/draw_chart_img.PNG)
 
 - Pie Chart <br>
-![draw_pie_chart](./img_file/draw_pie_chart.PNG)
+![pie_chart](./img_file/pie_chart.PNG)
 <br>
 **Due to the large differences between the data, the pie chart showed 0% in part. Some modifications have been made.**
 
