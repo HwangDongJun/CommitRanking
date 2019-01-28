@@ -32,6 +32,8 @@
 
 - Pie Chart <br>
 ![draw_pie_chart](./img_file/draw_pie_chart.PNG)
+<br>
+**Due to the large differences between the data, the pie chart showed 0% in part. Some modifications have been made.**
 
 ---
 ## Github User EventData

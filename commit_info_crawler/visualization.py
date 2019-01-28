@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+import seaborn as sns
 from matplotlib import style
 
 
@@ -30,6 +31,9 @@ class draw_chart(object):
 		#Set data to list()
 		UserName = data.UserName.tolist()
 		CommitCount = data.CommitCount.tolist()
+		
+		fig = plt.figure(figsize=(10, 6))
+		ax = fig.add_subplot(111)
 
 		index = CommitCount.index(max(CommitCount))
 		explode = list()
@@ -40,5 +44,8 @@ class draw_chart(object):
 				explode.append(0.0)
 		explode = tuple(explode)
 
-		plt.pie(CommitCount, labels=UserName, shadow=True, startangle=90, autopct='%1.1f%%', explode=explode, pctdistance=0.7)
+		plt.pie(CommitCount, shadow=False, startangle=90, autopct='%1.0f%%', explode=explode, pctdistance=1.1)
+		plt.legend(UserName, loc="best")
+		plt.axis('equal')
+		plt.tight_layout()
 		plt.show()
